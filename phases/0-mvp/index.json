@@ -2,12 +2,43 @@
   "project": "Formcast",
   "phase": "0-mvp",
   "steps": [
-    { "step": 0, "name": "project-setup", "status": "pending" },
-    { "step": 1, "name": "schema-types", "status": "pending" },
-    { "step": 2, "name": "schema-resolver", "status": "pending" },
-    { "step": 3, "name": "validator", "status": "pending" },
-    { "step": 4, "name": "field-renderer", "status": "pending" },
-    { "step": 5, "name": "presets", "status": "pending" },
-    { "step": 6, "name": "form-ui", "status": "pending" }
-  ]
+    {
+      "step": 0,
+      "name": "project-setup",
+      "status": "completed",
+      "started_at": "2026-06-16T06:58:40+0900",
+      "summary": "Next.js 15.5(App Router, TS strict, Tailwind v4) + Vitest 스캐폴딩. src/{components,types,lib} 생성, vitest.config.ts에 @/* 별칭 설정, scripts(dev/build/lint/test) 정렬. lint/build/test 모두 통과."
+    },
+    {
+      "step": 1,
+      "name": "schema-types",
+      "status": "pending"
+    },
+    {
+      "step": 2,
+      "name": "schema-resolver",
+      "status": "pending"
+    },
+    {
+      "step": 3,
+      "name": "validator",
+      "status": "pending"
+    },
+    {
+      "step": 4,
+      "name": "field-renderer",
+      "status": "pending"
+    },
+    {
+      "step": 5,
+      "name": "presets",
+      "status": "pending"
+    },
+    {
+      "step": 6,
+      "name": "form-ui",
+      "status": "pending"
+    }
+  ],
+  "created_at": "2026-06-16T06:58:40+0900"
 }
