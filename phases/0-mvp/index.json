@@ -48,7 +48,7 @@
       "status": "completed",
       "started_at": "2026-06-16T07:07:41+0900",
       "summary": "프리셋 3개(회원가입·설문·배송정보) + 검증 테스트. src/lib/presets.ts: enum/number(min/max)/boolean/pattern(이메일·전화)을 골고루 포함한 PRD 서브셋 스키마 상수. presets.test.ts가 모든 프리셋이 resolveSchema에서 ok:true임을 보장.",
-      "completed_at": "2026-06-16T07:09:00+0900"
+      "completed_at": "2026-06-16T07:08:58+0900"
     },
     {
       "step": 6,
