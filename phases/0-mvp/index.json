@@ -37,7 +37,10 @@
     {
       "step": 4,
       "name": "field-renderer",
-      "status": "pending"
+      "status": "completed",
+      "started_at": "2026-06-16T07:06:50+0900",
+      "summary": "FieldInput 구현 (4가지 kind)",
+      "completed_at": "2026-06-16T18:07:30+0900"
     },
     {
       "step": 5,
