@@ -7,7 +7,8 @@
       "name": "project-setup",
       "status": "completed",
       "started_at": "2026-06-16T06:58:40+0900",
-      "summary": "Next.js 15.5(App Router, TS strict, Tailwind v4) + Vitest 스캐폴딩. src/{components,types,lib} 생성, vitest.config.ts에 @/* 별칭 설정, scripts(dev/build/lint/test) 정렬. lint/build/test 모두 통과."
+      "summary": "Next.js 15.5(App Router, TS strict, Tailwind v4) + Vitest 스캐폴딩. src/{components,types,lib} 생성, vitest.config.ts에 @/* 별칭 설정, scripts(dev/build/lint/test) 정렬. lint/build/test 모두 통과.",
+      "completed_at": "2026-06-16T07:03:26+0900"
     },
     {
       "step": 1,
