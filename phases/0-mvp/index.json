@@ -21,7 +21,10 @@
     {
       "step": 2,
       "name": "schema-resolver",
-      "status": "pending"
+      "status": "completed",
+      "started_at": "2026-06-16T07:04:13+0900",
+      "summary": "resolveSchema 구현 + 테스트 6개. src/lib/resolver.ts: 스키마 문자열을 정규화된 Field[]로 변환하는 순수 함수. JSON 파싱 오류·비object 최상위·미지원 타입을 스키마 에러로 반환, enum→kind/options, label fallback, required/constraints 반영.",
+      "completed_at": "2026-06-16T07:05:00+0900"
     },
     {
       "step": 3,
