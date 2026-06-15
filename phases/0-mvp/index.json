@@ -1,0 +1,13 @@
+{
+  "project": "Formcast",
+  "phase": "0-mvp",
+  "steps": [
+    { "step": 0, "name": "project-setup", "status": "pending" },
+    { "step": 1, "name": "schema-types", "status": "pending" },
+    { "step": 2, "name": "schema-resolver", "status": "pending" },
+    { "step": 3, "name": "validator", "status": "pending" },
+    { "step": 4, "name": "field-renderer", "status": "pending" },
+    { "step": 5, "name": "presets", "status": "pending" },
+    { "step": 6, "name": "form-ui", "status": "pending" }
+  ]
+}
