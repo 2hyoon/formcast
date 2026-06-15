@@ -29,7 +29,10 @@
     {
       "step": 3,
       "name": "validator",
-      "status": "pending"
+      "status": "completed",
+      "started_at": "2026-06-16T07:05:31+0900",
+      "summary": "validate 구현 + 테스트 11개. src/lib/validator.ts: resolver의 Field[]와 FormValues를 받아 FieldErrors(key→첫 위반 메시지)를 반환하는 순수 함수. required→string(minLength/maxLength/pattern)→number(숫자 해석·minimum/maximum)→enum(options) 순으로 검사, 빈 값+optional은 통과, 통과 필드는 키 미포함.",
+      "completed_at": "2026-06-16T18:06:30+0900"
     },
     {
       "step": 4,
