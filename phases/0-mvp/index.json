@@ -2,12 +2,63 @@
   "project": "Formcast",
   "phase": "0-mvp",
   "steps": [
-    { "step": 0, "name": "project-setup", "status": "pending" },
-    { "step": 1, "name": "schema-types", "status": "pending" },
-    { "step": 2, "name": "schema-resolver", "status": "pending" },
-    { "step": 3, "name": "validator", "status": "pending" },
-    { "step": 4, "name": "field-renderer", "status": "pending" },
-    { "step": 5, "name": "presets", "status": "pending" },
-    { "step": 6, "name": "form-ui", "status": "pending" }
-  ]
+    {
+      "step": 0,
+      "name": "project-setup",
+      "status": "completed",
+      "started_at": "2026-06-16T06:58:40+0900",
+      "summary": "Next.js 15.5(App Router, TS strict, Tailwind v4) + Vitest 스캐폴딩. src/{components,types,lib} 생성, vitest.config.ts에 @/* 별칭 설정, scripts(dev/build/lint/test) 정렬. lint/build/test 모두 통과.",
+      "completed_at": "2026-06-16T07:03:26+0900"
+    },
+    {
+      "step": 1,
+      "name": "schema-types",
+      "status": "completed",
+      "started_at": "2026-06-16T07:03:26+0900",
+      "summary": "src/types/schema.ts에 공유 타입 정의: PropertyType, PropertySchema, RootSchema(입력 스키마), FieldKind, Field(정규화 필드), FormValues, FieldErrors, ResolveResult(resolver 반환). PRD 서브셋(타입·제약) 전부 반영. lint/build/test 통과.",
+      "completed_at": "2026-06-16T07:04:13+0900"
+    },
+    {
+      "step": 2,
+      "name": "schema-resolver",
+      "status": "completed",
+      "started_at": "2026-06-16T07:04:13+0900",
+      "summary": "resolveSchema 구현 + 테스트 6개. src/lib/resolver.ts: 스키마 문자열을 정규화된 Field[]로 변환하는 순수 함수. JSON 파싱 오류·비object 최상위·미지원 타입을 스키마 에러로 반환, enum→kind/options, label fallback, required/constraints 반영.",
+      "completed_at": "2026-06-16T07:05:31+0900"
+    },
+    {
+      "step": 3,
+      "name": "validator",
+      "status": "completed",
+      "started_at": "2026-06-16T07:05:31+0900",
+      "summary": "validate 구현 + 테스트 11개. src/lib/validator.ts: resolver의 Field[]와 FormValues를 받아 FieldErrors(key→첫 위반 메시지)를 반환하는 순수 함수. required→string(minLength/maxLength/pattern)→number(숫자 해석·minimum/maximum)→enum(options) 순으로 검사, 빈 값+optional은 통과, 통과 필드는 키 미포함.",
+      "completed_at": "2026-06-16T07:06:50+0900"
+    },
+    {
+      "step": 4,
+      "name": "field-renderer",
+      "status": "completed",
+      "started_at": "2026-06-16T07:06:50+0900",
+      "summary": "FieldInput 구현 (4가지 kind)",
+      "completed_at": "2026-06-16T07:07:41+0900"
+    },
+    {
+      "step": 5,
+      "name": "presets",
+      "status": "completed",
+      "started_at": "2026-06-16T07:07:41+0900",
+      "summary": "프리셋 3개(회원가입·설문·배송정보) + 검증 테스트. src/lib/presets.ts: enum/number(min/max)/boolean/pattern(이메일·전화)을 골고루 포함한 PRD 서브셋 스키마 상수. presets.test.ts가 모든 프리셋이 resolveSchema에서 ok:true임을 보장.",
+      "completed_at": "2026-06-16T07:08:58+0900"
+    },
+    {
+      "step": 6,
+      "name": "form-ui",
+      "status": "completed",
+      "started_at": "2026-06-16T07:08:58+0900",
+      "summary": "2분할 통합 페이지 완성",
+      "completed_at": "2026-06-16T07:10:32+0900"
+    }
+  ],
+  "created_at": "2026-06-16T06:58:40+0900",
+  "completed_at": "2026-06-16T07:10:32+0900"
 }
